@@ -1,21 +1,21 @@
-@font-face{
+@font-face {
     font-family: "Cheddar Jack";
     src: url('../fonts/Cheddar\ Jack.ttf');
 }
 
-@font-face{
+@font-face {
     font-family: "LOGOTYPE";
     src: url('../fonts/LOGOTYPE.otf');
 }
-@font-face{
+
+@font-face {
     font-family: "Wv";
     src: url('../fonts/wv.ttf');
 }
 
-/* reset */
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
     font-family: Montserrat, sans-serif;
@@ -23,8 +23,7 @@
 }
 
 
-/* smooth scroll */
-html{
+html {
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
     scroll-behavior: smooth;
@@ -33,21 +32,21 @@ html{
 
 /* utility */
 
-.container{
+.container {
     width: 100%;
     padding: 25px;
     position: relative;
 }
 
 
-h2{
+h2 {
     font-size: 2rem;
     text-align: center;
     line-height: 3;
     color: #242323;
 }
 
-h2::after{
+h2::after {
     content: '';
     width: 200px;
     height: 3px;
@@ -62,7 +61,7 @@ h2::after{
 
 
 /* header */
-.header{
+.header {
     display: block;
     width: 100%;
     max-height: 50px;
@@ -70,8 +69,8 @@ h2::after{
 }
 
 
-.logo{
-    font-family: 'Wv',cursive;
+.logo {
+    font-family: 'Wv', cursive;
     font-size: 2rem;
     position: absolute;
     top: 8px;
@@ -87,7 +86,9 @@ h2::after{
     z-index: 999;
 }
 
-.bar1,.bar2,.bar3 {
+.bar1,
+.bar2,
+.bar3 {
     display: block;
     width: 35px;
     height: 4px;
@@ -96,27 +97,28 @@ h2::after{
     transition: 0.4s;
 }
 
-#menu.change{
+#menu.change {
     position: fixed;
 }
-.change .bar1{
-    transform: translate(5px,7px);
+
+.change .bar1 {
+    transform: translate(5px, 7px);
     background: #fff;
 }
 
-.change .bar2{
+.change .bar2 {
     opacity: 0;
 }
 
 
-.change .bar3{
+.change .bar3 {
     transform: translate(-15px, -2px);
     background: #fff;
 }
 
 
 
-.navigasi{
+.navigasi {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -126,7 +128,7 @@ h2::after{
     display: none;
 }
 
-.active{
+.active {
     display: block;
     z-index: 1;
     position: fixed;
@@ -145,29 +147,28 @@ h2::after{
 }
 
 
-.navigasi ul li{
+.navigasi ul li {
     padding: 25px 10px;
 }
 
-.navigasi ul li a{
+.navigasi ul li a {
     text-decoration: none;
-    color : #fff;
+    color: #fff;
     font-size: 1.8rem;
     font-weight: 300;
 }
 
 
-.navigasi ul li:hover a{
+.navigasi ul li:hover a {
     color: rgb(231, 182, 47);
 }
+
 /* header */
 
 
 
-/* section jumbotron */
-
-.jumbotron{
-    background: linear-gradient(rgba(231, 182, 47, 0.685), rgba(197, 102, 24, 0.904)),url('../images/bg_home.jpg') center no-repeat;
+.jumbotron {
+    background: linear-gradient(rgba(231, 182, 47, 0.685), rgba(197, 102, 24, 0.904)), url('../images/bg_home.jpg') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -177,14 +178,14 @@ h2::after{
     position: relative;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
     font-size: 2.5rem;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.829);
     text-align: center;
     margin-top: 30px;
 }
 
-.jumbotron p{
+.jumbotron p {
     font-size: .9em;
     text-align: center;
     font-weight: 900;
@@ -193,16 +194,13 @@ h2::after{
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.829);
 }
 
-/* jumbotron */
 
-
-/* about section */
-
-.about{
+.about {
     position: relative;
     box-sizing: border-box;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -212,32 +210,33 @@ h2::after{
     background: linear-gradient(rgba(231, 182, 47, 0.685), rgba(197, 102, 24, 0.904));
 }
 
-.about img{
+.about img {
     width: 100%;
-    border : 5px solid rgba(247, 247, 247, 0.877);
+    border: 5px solid rgba(247, 247, 247, 0.877);
 }
 
-.about p{
+.about p {
     color: #fff;
     text-align: center;
     margin: 15px;
     line-height: 1.5;
 }
+
 /* about */
 
 
 /* personal information */
-.biodata{
+.biodata {
     position: relative;
     background: #d6d5d548;
 }
 
 
-.table-container{
+.table-container {
     overflow-x: auto;
 }
 
-.biodata table{
+.biodata table {
     width: 50%;
     margin: 0 auto;
     border-collapse: collapse;
@@ -247,20 +246,17 @@ h2::after{
 }
 
 
-.biodata table td{
+.biodata table td {
     padding: 20px;
     border: 1px solid #fff;
 }
 
-.biodata table td.right{
+.biodata table td.right {
     text-align: right;
 }
 
-/* personal information */
-
-
-/* contact */
-input,textarea{
+input,
+textarea {
     width: 100%;
     margin: 15px 0;
     padding: 10px;
@@ -268,7 +264,7 @@ input,textarea{
     border-radius: 3px;
 }
 
-.contact button{
+.contact button {
     width: 100%;
     padding: 10px;
     background: rgb(204, 106, 15);
@@ -276,17 +272,12 @@ input,textarea{
     cursor: pointer;
     color: #fff;
 }
-.contact{
+
+.contact {
     position: relative;
 }
 
-
-/* contact */
-
-/* footer */
-
-
-footer{
+footer {
     text-align: center;
     font-size: 14px;
     color: #dddddd;
@@ -295,35 +286,35 @@ footer{
 }
 
 
-@media (min-width: 976px){
+@media (min-width: 976px) {
 
     /*  utility changes */
-    .container{
+    .container {
         padding: 80px;
     }
 
-    h2{
+    h2 {
         margin-top: -50px;
         margin-bottom: 30px;
     }
 
-    h2::after{
+    h2::after {
         top: 120px;
         right: 42%;
     }
 
-    .bar{
+    .bar {
         display: none;
     }
 
-    .navigasi{
+    .navigasi {
         position: static;
         width: 100%;
         display: block;
         background: initial;
     }
 
-    
+
     .navigasi ul {
         position: static;
         float: right;
@@ -332,53 +323,54 @@ footer{
         list-style: none;
         margin: -10px 25px;
     }
-    
-    
-    .navigasi ul li{
+
+
+    .navigasi ul li {
         display: inline-block;
     }
-    
-    .navigasi ul li a{
+
+    .navigasi ul li a {
         text-decoration: none;
-        color : #000;
+        color: #000;
         font-size: 1em;
         font-weight: 300;
     }
-    
 
 
-    .jumbotron{
+
+    .jumbotron {
         height: 100vh;
     }
-    .jumbotron h1{
+
+    .jumbotron h1 {
         text-align: center;
         margin-top: 100px;
         font-size: 4rem;
     }
 
-    .jumbotron p{
+    .jumbotron p {
         font-size: 2.5rem;
     }
 
-
-    .about img{
+    .about img {
         width: 300px;
         border-radius: 50%;
     }
 
-    .about p{
+    .about p {
         text-align: left;
         margin-top: 10%;
         margin-left: 5%;
 
     }
-    .card{
+
+    .card {
         flex-direction: row;
         padding: 100px;
     }
 
 
-    .contact form{
+    .contact form {
         width: 50%;
         margin: 0 auto;
     }

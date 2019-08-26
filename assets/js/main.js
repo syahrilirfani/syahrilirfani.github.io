@@ -13,10 +13,6 @@ links.forEach((link) => {
     });
 });
 
-
-
-// biodata
-
 let biodata = {
     'Name': 'Syahril Irfani Fattah',
     'Age': 19,
@@ -32,11 +28,10 @@ let output = '';
 let fields = Object.keys(biodata);
 let values = Object.values(biodata);
 
-fields.forEach((field,index) => {
-        output += '<tr><td> ' + field + ' </td> <td class="right"> ' + values[index] + ' </td> </tr>';
+fields.forEach((field, index) => {
+    output += '<tr><td> ' + field + ' </td> <td class="right"> ' + values[index] + ' </td> </tr>';
 });
 
 
 
 document.querySelector('#bio').innerHTML = output;
-
